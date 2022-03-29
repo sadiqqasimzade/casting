@@ -10,11 +10,11 @@ namespace casting
             Person[] students = new Student[0];
             Person[] teachers = new Teacher[0];
             //Debug rahat olsun deye =) ps:studentin olcusunu deyismek lazimdi
-            //students[0] = new Student("sadiq", "mvp", 14, 55);
-            //students[1] = new Student("sadiq", "mvp", 14, 65);
-            //students[2] = new Student("sadiq", "mvp", 14, 5);
-            //students[3] = new Student("sadiq", "mvp", 14, 95);
-            //students[4] = new Student("sadiq", "mvp", 14, 95);
+            //students[0] = new Student("Sadiq", "Mvp", 14, 55);
+            //students[1] = new Student("Sadiq", "Mvp", 14, 65);
+            //students[2] = new Student("Sadiq", "Mvp", 14, 5);
+            //students[3] = new Student("Sadiq", "Mvp", 14, 95);
+            //students[4] = new Student("Sadiq", "Mvp", 14, 15);
             do
             {
             ChoisePoint:
@@ -79,14 +79,14 @@ namespace casting
 
                                     try
                                     {
-                                        if (students.Length == index + 1) throw new Exception("No students left");
+                                        if (students.Length < index + 1) throw new Exception("No students left");
                                         groupMate[index] = (Student)students[index];
                                         index++;
                                         Console.WriteLine("Student added");
                                     }
-                                    catch (Exception)
+                                    catch (Exception ex)
                                     {
-                                        Console.WriteLine("No space available");
+                                        Console.WriteLine( ex.Message);
                                     }
                                     break;
                                 case 2: //Sort Students by Points
