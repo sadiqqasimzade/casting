@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Text.RegularExpressions;
 
 namespace casting.Models
 {
@@ -25,24 +24,28 @@ namespace casting.Models
         }
         public static void NameInput(out string name)
         {
-            Regex regex = new Regex("^[A-Z]+[a-z]+$");
+            
             do
             {
-                Console.WriteLine("Name must start with upper letter and after contain olny lower letters");
+                Console.WriteLine("Name example:X Æ A-12");
                 Console.Write("Name:");
                 name = Console.ReadLine();
-            } while (!regex.IsMatch(name));
+            } while (String.IsNullOrEmpty(name)||String.IsNullOrWhiteSpace(name));
+            char[] arr = name.Trim().ToCharArray();
+            arr[0] = Char.ToUpper(arr[0]);
+            name=String.Concat(arr);
         }
 
         public static void SurnameInput(out string surname)
         {
-            Regex regex = new Regex("^[A-Z]+[a-z]+$");
             do
             {
-                Console.WriteLine("Surname must start with upper letter and after contain olny lower letters");
                 Console.Write("Surname:");
                 surname = Console.ReadLine();
-            } while (!regex.IsMatch(surname));
+            } while (String.IsNullOrEmpty(surname) || String.IsNullOrWhiteSpace(surname));
+            char[] arr = surname.Trim().ToCharArray();
+            arr[0] = Char.ToUpper(arr[0]);
+            surname = String.Concat(arr);
         }
 
         public static byte AgeInput(byte agemin, byte agemax = 122) //byte 0-255, 

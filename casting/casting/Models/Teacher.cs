@@ -9,7 +9,7 @@ namespace casting.Models
         public double Salary { get; set; }
 
 
-        public Teacher(string name, string surname, byte age, double salary) 
+        public Teacher(string name, string surname, byte age, double salary) : base()
         {
             Name = name;
             Surname = surname;
@@ -37,7 +37,7 @@ namespace casting.Models
 
         public override string ShowInfo()
         {
-            return $"---------------\n{this.GetType().Name}\nName:{Name}\nSurname:{Surname}\nAge:{Age}\nSalary:{Salary}";
+            return $"---------------\n{this.GetType().Name}\nName:{Name}\nSurname:{Surname}\nAge:{Age}\nId:{Id}\nSalary:{Salary}";
         }
 
         public static bool operator >(Teacher teacher1, Teacher teacher2)

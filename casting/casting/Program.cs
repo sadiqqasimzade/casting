@@ -28,7 +28,7 @@ namespace casting
                     Console.WriteLine(ex.Message);
                     goto ChoisePoint;
                 }
-
+                
                 switch (choise)
                 {
                     case 0: break;

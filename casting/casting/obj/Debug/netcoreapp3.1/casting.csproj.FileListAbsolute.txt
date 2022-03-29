@@ -26,3 +26,17 @@ C:\Users\admin\Desktop\git\casting\casting\casting\obj\Debug\netcoreapp3.1\casti
 C:\Users\admin\Desktop\git\casting\casting\casting\obj\Debug\netcoreapp3.1\casting.dll
 C:\Users\admin\Desktop\git\casting\casting\casting\obj\Debug\netcoreapp3.1\casting.pdb
 C:\Users\admin\Desktop\git\casting\casting\casting\obj\Debug\netcoreapp3.1\casting.genruntimeconfig.cache
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\bin\Debug\netcoreapp3.1\casting.exe
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\bin\Debug\netcoreapp3.1\casting.deps.json
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\bin\Debug\netcoreapp3.1\casting.runtimeconfig.json
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\bin\Debug\netcoreapp3.1\casting.runtimeconfig.dev.json
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\bin\Debug\netcoreapp3.1\casting.dll
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\bin\Debug\netcoreapp3.1\casting.pdb
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\obj\Debug\netcoreapp3.1\casting.csproj.AssemblyReference.cache
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\obj\Debug\netcoreapp3.1\casting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\obj\Debug\netcoreapp3.1\casting.AssemblyInfoInputs.cache
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\obj\Debug\netcoreapp3.1\casting.AssemblyInfo.cs
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\obj\Debug\netcoreapp3.1\casting.csproj.CoreCompileInputs.cache
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\obj\Debug\netcoreapp3.1\casting.dll
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\obj\Debug\netcoreapp3.1\casting.pdb
+C:\Users\tu6w5xs1c\Desktop\casting\casting\casting\obj\Debug\netcoreapp3.1\casting.genruntimeconfig.cache
