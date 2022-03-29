@@ -7,19 +7,20 @@ namespace casting
         static void Main()
         {
             sbyte choise;
-            Person[] students = new Student[5];
-            students[0] = new Student("sadiq", "mvp", 14, 55);
-            students[1] = new Student("sadiq", "mvp", 14, 65);
-            students[2] = new Student("sadiq", "mvp", 14, 5);
-            students[3] = new Student("sadiq", "mvp", 14, 95);
-            students[4] = new Student("sadiq", "mvp", 14, 95);
+            Person[] students = new Student[0];
             Person[] teachers = new Teacher[0];
+            //Debug rahat olsun deye =) ps:studentin olcusunu deyismek lazimdi
+            //students[0] = new Student("sadiq", "mvp", 14, 55);
+            //students[1] = new Student("sadiq", "mvp", 14, 65);
+            //students[2] = new Student("sadiq", "mvp", 14, 5);
+            //students[3] = new Student("sadiq", "mvp", 14, 95);
+            //students[4] = new Student("sadiq", "mvp", 14, 95);
             do
             {
             ChoisePoint:
                 try
                 {
-                    Console.Write("-------------\n1)Create Student\n2)Create Teacher\n3)Show all Info\n4)Work with Group\nChoise:");
+                    Console.Write("-------------\n1)Create Student\n2)Create Teacher\n3)Show all Info\n4)Work with Group\n5)Compare salarys\nChoise:");
                     choise = Convert.ToSByte(Console.ReadLine());
                 }
                 catch (Exception ex)
@@ -31,7 +32,7 @@ namespace casting
                 switch (choise)
                 {
                     case 0: break;
-                    case 1:
+                    case 1: //Create student
                         Person.NameInput(out string studentname);
                         Person.SurnameInput(out string studentsurname);
                         byte studentage = Person.AgeInput(6, 20);
@@ -39,7 +40,7 @@ namespace casting
                         Array.Resize(ref students, students.Length + 1);
                         students[students.Length - 1] = new Student(studentname, studentsurname, studentage, point);
                         break;
-                    case 2:
+                    case 2: //Create teacher
                         Person.NameInput(out string teachername);
                         Person.SurnameInput(out string teachersurname);
                         byte teacherage = Person.AgeInput(18, 65);
@@ -47,17 +48,16 @@ namespace casting
                         Array.Resize(ref teachers, teachers.Length + 1);
                         teachers[teachers.Length - 1] = new Teacher(teachername, teachersurname, teacherage, salary);
                         break;
-                    case 3:
+                    case 3: //ShowInfo
                         foreach (var person in students)
                             Console.WriteLine(person);
                         foreach (var person in teachers)
                             Console.WriteLine(person);
                         break;
-                    case 4:
+                    case 4: //GroupMate
 
                         GroupMate groupMate = new GroupMate();
-
-                            byte index = 0;
+                        byte index = 0;
                         do
                         {
                         ChoisePoint1:
@@ -75,10 +75,11 @@ namespace casting
                             switch (choise)
                             {
                                 case 0: break;
-                                case 1:
+                                case 1: //Add 1 student to group            //TODO!!!!!!!!!!!!!
 
                                     try
                                     {
+                                        if (students.Length == index + 1) throw new Exception("No students left");
                                         groupMate[index] = (Student)students[index];
                                         index++;
                                         Console.WriteLine("Student added");
@@ -88,10 +89,10 @@ namespace casting
                                         Console.WriteLine("No space available");
                                     }
                                     break;
-                                case 2:
+                                case 2: //Sort Students by Points
                                     groupMate.Sort();
                                     break;
-                                case 3:
+                                case 3: //Show sorted students
                                     groupMate.Cout();
                                     break;
                                 default:
@@ -101,12 +102,22 @@ namespace casting
 
                         } while (choise != 0);
                         break;
+                    case 5: // Compare salarys
+
+                        try
+                        {
+                            if (teachers.Length < 2) throw new Exception("Min length is 2");
+                            Console.WriteLine($"Theacher 1 has more salary:{(Teacher)teachers[0] > (Teacher)teachers[1]}");
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
+                        break;
                     default:
                         Console.WriteLine("Wrong Input");
                         break;
                 }
-
-
             } while (choise != 0);
         }
     }

@@ -40,15 +40,15 @@ namespace casting.Models
             return $"---------------\n{this.GetType().Name}\nName:{Name}\nSurname:{Surname}\nAge:{Age}\nSalary:{Salary}";
         }
 
-        public static Teacher operator >(Teacher teacher1, Teacher teacher2)
+        public static bool operator >(Teacher teacher1, Teacher teacher2)
         {
-            if (teacher1.Salary > teacher2.Salary) return teacher1;
-            else return teacher2;
+            if (teacher1.Salary > teacher2.Salary) return true;
+            else return false;
         }
-        public static Teacher operator <(Teacher teacher1, Teacher teacher2)
+        public static bool operator <(Teacher teacher1, Teacher teacher2)
         {
-            if (teacher2.Salary > teacher1.Salary) return teacher2;
-            else return teacher1;
+            if (teacher2.Salary > teacher1.Salary) return true;
+            else return false;
         }
     }
 }

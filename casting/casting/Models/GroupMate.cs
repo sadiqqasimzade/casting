@@ -12,7 +12,6 @@ namespace casting.Models
         {
             get { return students[index]; }
             set { 
-                
                 Array.Resize(ref students,students.Length+1);
                 students[index] = value; }
         }

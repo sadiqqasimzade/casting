@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\git\\all\\casting\\casting\\casting.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\git\\casting\\casting\\casting\\casting.csproj",
       "projectName": "casting",
-      "projectPath": "C:\\Users\\admin\\Desktop\\git\\all\\casting\\casting\\casting.csproj",
+      "projectPath": "C:\\Users\\admin\\Desktop\\git\\casting\\casting\\casting\\casting.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\git\\all\\casting\\casting\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\git\\casting\\casting\\casting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
