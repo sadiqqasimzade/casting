@@ -43,12 +43,12 @@ namespace casting.Models
         public static bool operator >(Teacher teacher1, Teacher teacher2)
         {
             if (teacher1.Salary > teacher2.Salary) return true;
-            else return false;
+             return false;
         }
         public static bool operator <(Teacher teacher1, Teacher teacher2)
         {
             if (teacher2.Salary > teacher1.Salary) return true;
-            else return false;
+             return false;
         }
     }
 }

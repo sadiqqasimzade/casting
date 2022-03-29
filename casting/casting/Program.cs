@@ -75,7 +75,7 @@ namespace casting
                             switch (choise)
                             {
                                 case 0: break;
-                                case 1: //Add 1 student to group            //TODO!!!!!!!!!!!!!
+                                case 1: //Add 1 student to group            
 
                                     try
                                     {
@@ -103,7 +103,6 @@ namespace casting
                         } while (choise != 0);
                         break;
                     case 5: // Compare salarys
-
                         try
                         {
                             if (teachers.Length < 2) throw new Exception("Min length is 2");

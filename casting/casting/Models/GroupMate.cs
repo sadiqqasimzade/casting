@@ -25,10 +25,9 @@ namespace casting.Models
                     for (int j = 0; j < students.Length - i - 1; j++)
                         if (students[j] < students[j + 1])
                         {
-                            students[j].Point = students[j].Point + students[j + 1].Point;
-                            students[j + 1].Point = students[j].Point - students[j + 1].Point;
-                            students[j].Point = students[j].Point - students[j + 1].Point;
-
+                            Student temp=students[j];
+                            students[j]=students[j + 1];
+                            students[j+1]=temp;
                         }
             }
             else Console.WriteLine("Min length must be >2");
